@@ -71,4 +71,51 @@ int main()
   justify(sentence, screen_len);
   return 0;
 }
+4)
+#include <stdio.h>
+int main() {
+  int m[3][3];
+  for (int i = 0; i < 3; i++) for (int j = 0; j < 3; j++) scanf("%d", &m[i][j]);
+  printf("The matrix is:\n");
+  for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) printf("%d ", m[i][j]);
+    printf("\n");
+  }
+  return 0;
+}
+5)
+#include <stdio.h
+int main() {
+  char input[100];
+  int i = 0, count;
+  scanf("%s", input);
+  while (input[i] != '\0') {
+    count = 0;
+    while (input[i + 1] >= '0' && input[i + 1] <= '9') { count = count * 10 + (input[i + 1] - '0'); i++; }
+    for (int j = 0; j < count; j++) printf("%c", input[i]);
+    i++;
+  }
+  printf("\n");
+  return 0;
+}
+6)
+#include <stdio.h>
+int main()
+{
+  char input[100];
+  int i = 0, count;
+  scanf("%s", input);
+  while (input[i] != '\0') 
+  {
+    count = 0;
+    while (input[i + 1] >= '0' && input[i + 1] <= '9') { count = count * 10 + (input[i + 1] - '0'); i++;
+  }
+    for (int j = 0; j < count; j++) printf("%c", input[i]);
+    i++;
+  }
+  printf("\n");
+  return 0;
+}
+
+
 
